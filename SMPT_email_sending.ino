@@ -1,17 +1,20 @@
+// Before running the code, check if you installed "ESP32_MailClient.h" library file in your IDE, If not install, install that library and then proceed 
+
+
 #include "ESP32_MailClient.h"
 
 // REPLACE WITH YOUR NETWORK DETAILS
-const char* ssid = "NAREN ANU";
-const char* pass = "Sranfamily5@";
+const char* ssid = "SSID";
+const char* pass = "PASSWORD";
 
 // To send Email using Gmail use port 465 (SSL) and SMTP Server smtp.gmail.com
 // YOU MUST ENABLE less secure app option https://myaccount.google.com/lesssecureapps?pli=1
-#define emailSenderAccount    "projecttestingformyself@gmail.com"    
-#define emailSenderPassword   "narendrans"
-#define emailRecipient        "livingfriends5555@gmail.com"
+#define emailSenderAccount    "SENDING_MAIL_ADDRESS"    
+#define emailSenderPassword   "PASSWORD_OF_SENDERMAIL_ADDRESS"
+#define emailRecipient        "RECIPIENT_MAIL_ADDRESS"
 #define smtpServer            "smtp.gmail.com"
 #define smtpServerPort        465
-#define emailSubject          "ESP32 Test"
+#define emailSubject          "ESP32 Test" // You can change it according to your usage
 
 // The Email Sending data object contains config and data to send
 SMTPData smtpData;
